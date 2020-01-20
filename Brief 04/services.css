@@ -216,6 +216,9 @@ body {
     margin-left: 18px;
 }
 
+
+/*part2*/
+
 .flex {
     display: flex;
     width: 100%;
@@ -351,6 +354,9 @@ img {
     background-size: cover;
 }
 
+
+/* Fin part2*/
+
 #part6 {
     margin-top: 100px;
     /*  */
@@ -443,43 +449,14 @@ img {
     margin-left: 20px;
 }
 
+
+/*part2*/
+
 .pic {
     background-image: url(dubai1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-}
-
-.part {
-    margin-left: 25%;
-    padding-top: 3%;
-    padding-bottom: 3%;
-}
-
-.tit2 {
-    font-family: Open sans;
-    font-size: 15px;
-    margin-bottom: 1%;
-    font-weight: bold;
-    color: white;
-}
-
-.par2 {
-    font-size: 13px;
-    font-family: Open sans;
-    margin-bottom: 1%;
-    color: white;
-}
-
-.zone-email {
-    padding: 1% 2% 1% 28%;
-}
-
-.boutton4 {
-    padding: 1%;
-    background-color: #C49D48;
-    color: white;
-    border: none;
 }
 
 #part7 {
@@ -636,6 +613,7 @@ img {
         margin-top: 0;
         margin-bottom: 75px;
     }
+    /* Responsive2*/
     .post {
         display: block;
     }
@@ -691,6 +669,7 @@ img {
         height: 34px;
         font-size: 8px;
     }
+    /* Responsive*/
     .flex {
         display: block;
     }

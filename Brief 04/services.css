@@ -136,7 +136,7 @@ body {
     font-size: 30px;
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
-    color: shade2;
+    color: #000;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -144,7 +144,7 @@ body {
     box-sizing: border-box;
     width: 70%;
     margin-bottom: 15px;
-    border-bottom: 5px solid shade2;
+    border-bottom: 5px solid #000;
 }
 
 #Landing {
@@ -153,7 +153,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url('img/bg1.png');
+    background-image: url('./images/bg1.png');
     background-position: center;
     background-size: cover;
 }
@@ -302,23 +302,23 @@ img {
 }
 
 .image1 {
-    background-image: url(1571746141500_shutterstock_1045252990.jpg);
+    background-image: url(./images/1571746141500_shutterstock_1045252990.jpg);
 }
 
 .image2 {
-    background-image: url(1574933629.jpg);
+    background-image: url(./images/1574933629.jpg);
 }
 
 .image3 {
-    background-image: url(1571745734862_shutterstock_401671105_1.jpg);
+    background-image: url(./images/1571745734862_shutterstock_401671105_1.jpg);
 }
 
 .image4 {
-    background-image: url(1574877088764_shutterstock_154503533.jpg);
+    background-image: url(./images/1574877088764_shutterstock_154503533.jpg);
 }
 
 .image5 {
-    background-image: url(1574932987114_shutterstock_613911542.jpg);
+    background-image: url(./images/1574932987114_shutterstock_613911542.jpg);
 }
 
 .slide {
@@ -328,31 +328,46 @@ img {
 }
 
 .sli1 {
-    background-image: url(akii-patel-1s57S9zsd2M-unsplash.jpg);
-}
-
-.sli2 {
-    background-image: url(dubai-quad-bike-safari.jpg);
-}
-
-.sli3 {
-    background-image: url(helicopter-skydiving-interlaken-swiss-03.jpg);
-}
-
-.sli4 {
-    background-image: url(at-the-palm.jpg);
-}
-
-.sli5 {
-    background-image: url(survolerdubaienavion.png);
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .taille {
     width: 300px;
-    height: 150px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 200px;
 }
+
+.container1 {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #688095;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease;
+}
+
+.container1:hover .overlay {
+    height: 100%;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+}
+
+
+/**************************************************/
 
 
 /* Fin part2*/
@@ -363,7 +378,7 @@ img {
     width: 100%;
     height: 264px;
     /*  */
-    background-image: url('img/bg3.png');
+    background-image: url('./images/bg3.png');
     background-size: cover;
     background-position: center;
     /*  */
@@ -614,6 +629,17 @@ img {
         margin-bottom: 75px;
     }
     /* Responsive2*/
+    .flex {
+        display: flex;
+        flex-direction: column;
+    }
+    .img {
+        width: 100%;
+    }
+    .unorder-list1 {
+        width: 100%;
+        border-bottom: 1px solid black;
+    }
     .post {
         display: block;
     }
@@ -628,6 +654,13 @@ img {
     }
     #part7 {
         display: none;
+    }
+    #part6-form-btn {
+        width: auto;
+        padding: 0 15px;
+    }
+    #footer {
+        padding: 0 15px;
     }
 }
 
@@ -698,6 +731,9 @@ img {
     }
     .image {
         width: 100%;
+    }
+    #part6-container {
+        width: 90%;
     }
     #footer {
         font-size: 6px;

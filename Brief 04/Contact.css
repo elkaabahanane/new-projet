@@ -337,6 +337,7 @@
                     display: block;
                     width: 10%;
                     font-size: 18px;
+                    border: none;
                 }
                 
                 #part7 {
@@ -500,6 +501,15 @@
                     #part7 {
                         display: none;
                     }
+                    #submit {
+                        padding-top: 2%;
+                        padding-bottom: 2%;
+                        padding-left: 10%;
+                        padding-right: 20%;
+                    }
+                    #footer {
+                        margin-top: 2%;
+                    }
                 }
                 
                 @media screen and (max-width:375px) {
@@ -539,6 +549,10 @@
                         width: 105px;
                         height: 34px;
                         font-size: 8px;
+                    }
+                    #footer {
+                        font-size: 6px;
+                        margin-top: 2%;
                     }
                 }
                 

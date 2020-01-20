@@ -518,7 +518,7 @@ img {
 }
 
 .part7-section-title {
-    color: #688095;
+    color: black;
     font-size: 20px;
     font-weight: 800;
     text-transform: uppercase;
@@ -721,8 +721,6 @@ img {
         width: 100%;
     }
     #footer {
-        margin-top: 20px;
         font-size: 6px;
-        height: 25px;
     }
 }

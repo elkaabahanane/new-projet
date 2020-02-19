@@ -16,7 +16,7 @@ header {
     }
     #hamburger {
       font-size: 30px;
-      color: #FFF;
+      color: #fff;
       position: absolute;
       right: 25px;
       top: 25px;
@@ -133,36 +133,36 @@ nav {
   cursor: pointer;
   margin-top: 2%;
   .image1 {
-    background-image: url(../Img/Image1.jpg);
+    background-image: url("../Img/Image1.jpg");
     @include Image;
   }
   .image2 {
-    background-image: url(../Img/Image2.jpg);
+    background-image: url("../Img/Image2.jpg");
     @include Image;
   }
   .image3 {
-    background-image: url(../Img/Image3.jpg);
+    background-image: url("../Img/Image3.jpg");
     @include Image;
   }
   .image4 {
-    background-image: url(../Img/Image4.jpg);
+    background-image: url("../Img/Image4.jpg");
     @include Image;
   }
   .image5 {
-    background-image: url(../Img/Image5.jpg);
+    background-image: url("../Img/Image5.jpg");
     @include Image;
   }
   .image6 {
-    background-image: url(../Img/Image6.jpg);
+    background-image: url("../Img/Image6.jpg");
     @include Image;
   }
   .image7 {
-    background-image: url(../Img/Image7.jpg);
+    background-image: url("../Img/Image7.jpg");
     @include Image;
   }
 
   .image8 {
-    background-image: url(../Img/Image8.jpg);
+    background-image: url("../Img/Image8.jpg");
     @include Image;
   }
   .span {
@@ -317,6 +317,10 @@ footer {
 
       li {
         margin: 10px;
+        border-bottom: 1px solid $color1;
+        width: 80%;
+        text-align: center;
+        padding-bottom: 2%;
       }
     }
   }

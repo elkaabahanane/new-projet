@@ -23,7 +23,7 @@ header .Image-header .top-header {
 
 header .Image-header #hamburger {
   font-size: 30px;
-  color: #FFF;
+  color: #fff;
   position: absolute;
   right: 25px;
   top: 25px;
@@ -134,7 +134,7 @@ nav ul li a:hover {
 }
 
 .parent .image1 {
-  background-image: url(../Img/Image1.jpg);
+  background-image: url("../Img/Image1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -142,7 +142,7 @@ nav ul li a:hover {
 }
 
 .parent .image2 {
-  background-image: url(../Img/Image2.jpg);
+  background-image: url("../Img/Image2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -150,7 +150,7 @@ nav ul li a:hover {
 }
 
 .parent .image3 {
-  background-image: url(../Img/Image3.jpg);
+  background-image: url("../Img/Image3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -158,7 +158,7 @@ nav ul li a:hover {
 }
 
 .parent .image4 {
-  background-image: url(../Img/Image4.jpg);
+  background-image: url("../Img/Image4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -166,7 +166,7 @@ nav ul li a:hover {
 }
 
 .parent .image5 {
-  background-image: url(../Img/Image5.jpg);
+  background-image: url("../Img/Image5.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -174,7 +174,7 @@ nav ul li a:hover {
 }
 
 .parent .image6 {
-  background-image: url(../Img/Image6.jpg);
+  background-image: url("../Img/Image6.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -182,7 +182,7 @@ nav ul li a:hover {
 }
 
 .parent .image7 {
-  background-image: url(../Img/Image7.jpg);
+  background-image: url("../Img/Image7.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -190,7 +190,7 @@ nav ul li a:hover {
 }
 
 .parent .image8 {
-  background-image: url(../Img/Image8.jpg);
+  background-image: url("../Img/Image8.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -367,6 +367,10 @@ footer .sections p a {
   }
   .top-header nav ul.menu li {
     margin: 10px;
+    border-bottom: 1px solid #435061;
+    width: 80%;
+    text-align: center;
+    padding-bottom: 2%;
   }
 }
 

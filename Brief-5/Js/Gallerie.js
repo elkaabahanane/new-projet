@@ -26,7 +26,7 @@ prev.addEventListener("click", function () {
     imgContainer.innerHTML = "<img class='img' src='" + images[i] + "'>";
 });
 
-// Validation De Form
+// Validation De Forme
 
 // Converter les lettres des formulaires au majuscule
 var inputs = document.querySelectorAll('.uppercased');
@@ -43,6 +43,7 @@ submitBtn.addEventListener('click', function (e) {
     var prenom = document.getElementById("prenom").value;
     var email = document.getElementById("email").value;
     var telephone = document.getElementById("telephone").value;
+    var dateNaiss = document.getElementById("date-naiss").value;
     var dateD = document.getElementById("date1").value;
     var dateA = document.getElementById("date2").value;
     var personnes = document.getElementById("nombre-personne").value;
@@ -64,24 +65,37 @@ submitBtn.addEventListener('click', function (e) {
         } else if (dd.getTime() > da.getTime()) {
             alert('La date de reservation doit etre superieur a la date de sortie');
         } else {
-            alert('Le form est valide');
+            // Stocker les informations dans la localStorage de navigateur
+            localStorage.setItem('nom', nom);
+            localStorage.setItem('prenom', prenom);
+            localStorage.setItem('email', email);
+            localStorage.setItem('telephone', telephone);
+            localStorage.setItem('dateNaiss', dateNaiss);
+            localStorage.setItem('dateD', dateD);
+            localStorage.setItem('dateA', dateA);
+            localStorage.setItem('personnes', personnes);
+            location.href = 'popup.html';
         }
     }
 });
 
-// Ouvrir La Form De Validation De Reservation
+// Ouvrir La Forme De Reservation
 var reserverBtns = document.getElementsByClassName('reserver');
-var overlay = document.getElementById('overlay');
+var overlayd = document.getElementById('overlay');
 for (var i = 0; i < reserverBtns.length; i++) {
     reserverBtns[i].addEventListener('click', function (e) {
-        overlay.style.display = "block";
+        var boxParent = e.target.parentElement;
+        var backgroundImg = window.getComputedStyle(boxParent, false).backgroundImage.split('"')[1];
+
+        localStorage.setItem('image', backgroundImg);
+        overlayd.style.display = "block";
     });
 }
 
-// Fermer La Form De Validation De Reservation
+// Fermer La Forme De Validation De Reservation
 var close = document.getElementById('close-overlay');
 close.addEventListener('click', function (e) {
-    overlay.style.display = "none";
+    overlayd.style.display = "none";
 });
 
 
@@ -99,26 +113,26 @@ submitBtn.addEventListener('click', function (e) {
         alert('Le remplissage de tout les champs est obligatoire');
     } else {
         if (!/^[a-zA-Z]+$/.test(nom) || !/^[a-zA-Z]+$/.test(prenom)) {
-            alert('Le nom ou prenom doit contient que des lettres')
+            alert('Le nom ou prénom doit contient que des lettres')
         } else if (email.indexOf('@') == -1) {
-            alert("L'email doit etre un email valide");
+            alert("L'email doit être un email valide");
         } else if (pass != confPass) {
-            alert('La confirmation de mot de pass doit etre egale a la mot de passe');
+            alert('les deux mots de pass doit être identiques');
         } else if (!/^[0-9]{10}$/.test(telephone)) {
             alert('Le nombre doit contient 10 chiffres')
         } else {
-            alert('Le form est valide');
+            alert('Vous avez bien inscrit');
         }
     }
 });
 
-// Fermer La Form De Validation De Reservation
+// Fermer La Forme D'inscription
 var inscClose = document.getElementById('insc-close-overlay');
 inscClose.addEventListener('click', function (e) {
     overlay.style.display = "none";
 });
 
-// Ouvrir La Form De Validation De Reservation
+// Ouvrir La Forme D'inscription
 var inscription = document.getElementById('inscription');
 var overlay = document.getElementById('inscr-overlay');
 inscription.addEventListener('click', function (e) {

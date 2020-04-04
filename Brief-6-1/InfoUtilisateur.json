@@ -1,0 +1,42 @@
+[
+    {
+        "Nom": "Doe",
+        "Prenom": "John",
+        "Cin": "HH120222",
+        "Birth": "2001-01-01",
+        "Email": "hanane.elkaaba1@gmail.com",
+        "Password": "1234"
+    },
+    {
+        "Nom": "Doe",
+        "Prenom": "John",
+        "Cin": "HH120222",
+        "Birth": "2001-01-01",
+        "Email": "hanane.elkaaba1@gmail.com",
+        "Password": "1234"
+    },
+    {
+        "Nom": "Doe",
+        "Prenom": "John",
+        "Cin": "HH120222",
+        "Birth": "2001-01-01",
+        "Email": "hanane.elkaaba1@gmail.com",
+        "Password": "1234"
+    },
+    {
+        "Nom": "EL KAABA",
+        "Prenom": "Hanane",
+        "Cin": "46000",
+        "Birth": "2005-05-05",
+        "Email": "hanane.elkaaba1@gmail.com",
+        "Password": "1234"
+    },
+    {
+        "Nom": "Jane",
+        "Prenom": "Doe",
+        "Cin": "HH123456",
+        "Birth": "2009-09-09",
+        "Email": "hanane.elkaaba1@gmail.com",
+        "Password": "456"
+    }
+]

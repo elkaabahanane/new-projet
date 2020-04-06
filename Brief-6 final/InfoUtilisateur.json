@@ -1,0 +1,34 @@
+[
+  {
+    "Nom": "Chaoub",
+    "Prenom": "Achraf",
+    "Cin": "hh155068",
+    "Birth": "2020-04-06",
+    "Email": "Achraf.chaoub@gmail.com",
+    "Password": "achraf"
+  },
+  {
+    "Nom": "Chaoub",
+    "Prenom": "Achraf",
+    "Cin": "HH155068",
+    "Birth": "2020-04-13",
+    "Email": "Achraf.chaoub@gmail.com",
+    "Password": "achraf"
+  },
+  {
+    "Nom": "Chaoub",
+    "Prenom": "Achraf",
+    "Cin": "hh155068",
+    "Birth": "2019-05-09",
+    "Email": "Achraf.chaoub@gmail.com",
+    "Password": "azertyui"
+  },
+  {
+    "Nom": "doe",
+    "Prenom": "john",
+    "Cin": "HH558764",
+    "Birth": "1990-01-01",
+    "Email": "john@doe.com",
+    "Password": "123456"
+  }
+]
